@@ -1,0 +1,84 @@
+/* src/styles/DarkMode.css */
+:root {
+    --font-color: #eee;
+    --background-color: #18125e;
+    --primary-color: #2e2a5d;
+    --accent-color: #ffdb3a;
+    --link-color: #5dfdcb;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--font-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+.header,
+.footer {
+    background: var(--primary-color);
+    color: var(--accent-color);
+}
+
+button {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    margin: 0 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    background: #222;
+        color: #fff;
+        border: 1px solid #333;
+        border-radius: 4px;
+        margin: 0 4px;
+        padding: 6px 10px;
+        font-size: 0.875rem;
+        /* Match text-sm */
+        height: 40px;
+        /* Matches button/input height */
+        appearance: none;
+        /* Removes native OS styling */
+        background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem 1rem;
+        padding-right: 2rem;
+        /* Leave space for the dropdown arrow */
+        box-sizing: border-box;
+}
+
+
+
+.rbc-calendar {
+    background: #222 !important;
+    color: #fff !important;
+}
+
+.rbc-header {
+    background: var(--primary-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.rbc-event {
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+    border: none !important;
+}
+
+.rbc-today {
+    background: #2e2a5d !important;
+}
+
+.rbc-toolbar button {
+    background: var(--primary-color) !important;
+    color: var(--accent-color) !important;
+}
